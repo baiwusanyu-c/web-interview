@@ -1,4 +1,4 @@
-# 官：说说对 Node 中的 Buffer 的理解？应用场景？
+# 说说对 Node 中的 Buffer 的理解？应用场景？
 
  ![](https://static.vue-js.com/176d02b0-c69c-11eb-ab90-d9ae814b240d.png)
 

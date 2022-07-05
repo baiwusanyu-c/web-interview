@@ -1,4 +1,4 @@
-# 官：说说对 Node 中的 fs模块的理解? 有哪些常用方法
+# 说说对 Node 中的 fs模块的理解? 有哪些常用方法
 
  ![](https://static.vue-js.com/a141e5c0-c46a-11eb-85f6-6fac77c0c9b3.png)
 

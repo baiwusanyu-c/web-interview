@@ -1,4 +1,4 @@
-# 官：React中组件之间如何通信？
+# React中组件之间如何通信？
 
  ![](https://static.vue-js.com/767a2800-dc9f-11eb-85f6-6fac77c0c9b3.png)
 

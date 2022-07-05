@@ -1,4 +1,4 @@
-# 官：bind、call、apply 区别？如何实现一个bind?
+# bind、call、apply 区别？如何实现一个bind?
 
  ![](https://static.vue-js.com/a900e460-7be4-11eb-ab90-d9ae814b240d.png)
 

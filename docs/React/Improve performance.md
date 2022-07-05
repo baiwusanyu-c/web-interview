@@ -1,4 +1,4 @@
-# 官：说说 React 性能优化的手段有哪些？
+# 说说 React 性能优化的手段有哪些？
 
  ![](https://static.vue-js.com/a9e83b00-f270-11eb-ab90-d9ae814b240d.png)
 

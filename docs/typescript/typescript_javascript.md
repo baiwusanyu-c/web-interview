@@ -1,4 +1,4 @@
-# 官：说说你对 TypeScript 的理解？与 JavaScript 的区别？
+# 说说你对 TypeScript 的理解？与 JavaScript 的区别？
 
 ![](https://static.vue-js.com/58cd3580-0950-11ec-8e64-91fdec0f05a1.png)
 

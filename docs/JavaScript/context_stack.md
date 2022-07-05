@@ -1,4 +1,4 @@
-# 官：JavaScript中执行上下文和执行栈是什么？
+# JavaScript中执行上下文和执行栈是什么？
 
 ![](https://static.vue-js.com/8652b710-74c1-11eb-85f6-6fac77c0c9b3.png)
 

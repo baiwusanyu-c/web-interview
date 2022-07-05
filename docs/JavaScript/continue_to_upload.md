@@ -1,4 +1,4 @@
-# 官：大文件上传如何做断点续传？
+# 大文件上传如何做断点续传？
 
  ![](https://static.vue-js.com/3ccb0e90-8ba4-11eb-85f6-6fac77c0c9b3.png)
 

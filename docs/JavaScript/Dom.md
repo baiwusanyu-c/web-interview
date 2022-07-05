@@ -1,4 +1,4 @@
-# 官：DOM常见的操作有哪些？
+# DOM常见的操作有哪些？
 
  ![](https://static.vue-js.com/a89c99a0-7fdc-11eb-ab90-d9ae814b240d.png)
 

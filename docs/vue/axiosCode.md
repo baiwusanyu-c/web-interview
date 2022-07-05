@@ -1,4 +1,4 @@
-# 官：你了解axios的原理吗？有看过它的源码吗？
+# 你了解axios的原理吗？有看过它的源码吗？
 
 ![](https://static.vue-js.com/1564f7d0-4662-11eb-ab90-d9ae814b240d.png)
 

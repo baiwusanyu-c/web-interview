@@ -1,4 +1,4 @@
-# 官：vue3有了解过吗？能说说跟vue2的区别吗？
+# vue3有了解过吗？能说说跟vue2的区别吗？
 
  ![](https://static.vue-js.com/774b6950-5087-11eb-85f6-6fac77c0c9b3.png)
 

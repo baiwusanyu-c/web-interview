@@ -1,4 +1,4 @@
-# 官：web常见的攻击方式有哪些？如何防御？
+# web常见的攻击方式有哪些？如何防御？
 
  ![](https://static.vue-js.com/d0892930-8d1d-11eb-ab90-d9ae814b240d.png)
 

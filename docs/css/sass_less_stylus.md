@@ -1,4 +1,4 @@
-# 官：说说对Css预编语言的理解？有哪些区别?
+# 说说对Css预编语言的理解？有哪些区别?
 
  ![](https://static.vue-js.com/81cca1c0-a42c-11eb-85f6-6fac77c0c9b3.png)
 

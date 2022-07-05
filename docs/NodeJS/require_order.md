@@ -1,4 +1,4 @@
-# 官：说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?
+# 说说 Node 文件查找的优先级以及 Require 方法的文件查找策略?
 
  ![](https://static.vue-js.com/15913530-c9ba-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 官：说说Git中 fork, clone,branch这三个概念，有什么区别?
+# 说说Git中 fork, clone,branch这三个概念，有什么区别?
 
  ![](https://static.vue-js.com/9c4eb9a0-f7ad-11eb-bc6f-3f06e1491664.png)
 

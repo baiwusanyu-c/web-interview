@@ -1,4 +1,4 @@
-# 官：说说对中间件概念的理解，如何封装 node 中间件？
+# 说说对中间件概念的理解，如何封装 node 中间件？
 
  ![](https://static.vue-js.com/614ae480-cce4-11eb-ab90-d9ae814b240d.png)
 

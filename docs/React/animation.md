@@ -1,4 +1,4 @@
-# 官：在react中组件间过渡动画如何实现？
+# 在react中组件间过渡动画如何实现？
  ![](https://static.vue-js.com/294f1e00-e4b0-11eb-ab90-d9ae814b240d.png)
 
 

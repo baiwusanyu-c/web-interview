@@ -1,4 +1,4 @@
-# 官：如何理解CDN？说说实现原理？
+# 如何理解CDN？说说实现原理？
 
 ![](https://static.vue-js.com/437ae0f0-b86b-11eb-85f6-6fac77c0c9b3.png)
 

@@ -1,4 +1,4 @@
-# 官：JavaScript原型，原型链 ? 有什么特点？
+# JavaScript原型，原型链 ? 有什么特点？
 
  ![](https://static.vue-js.com/4500e170-725e-11eb-85f6-6fac77c0c9b3.png)
 

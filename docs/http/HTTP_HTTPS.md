@@ -1,4 +1,4 @@
-# 官：什么是HTTP? HTTP 和 HTTPS 的区别?
+# 什么是HTTP? HTTP 和 HTTPS 的区别?
 
  ![](https://static.vue-js.com/f50c71f0-b20b-11eb-ab90-d9ae814b240d.png)
 

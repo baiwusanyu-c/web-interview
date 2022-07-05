@@ -1,4 +1,4 @@
-# 官：谈谈this对象的理解
+# 谈谈this对象的理解
 
  ![](https://static.vue-js.com/46c820d0-74b7-11eb-85f6-6fac77c0c9b3.png)
 

@@ -1,4 +1,4 @@
-# 官：说说你对 TypeScript 中泛型的理解？应用场景？
+# 说说你对 TypeScript 中泛型的理解？应用场景？
 
 
  ![](https://static.vue-js.com/5bb5f1d0-0e17-11ec-8e64-91fdec0f05a1.png)

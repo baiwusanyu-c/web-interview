@@ -1,4 +1,4 @@
-# 官：如何使用css完成视差滚动效果?
+# 如何使用css完成视差滚动效果?
 
  ![](https://static.vue-js.com/1b2d33e0-a18d-11eb-85f6-6fac77c0c9b3.png)
 

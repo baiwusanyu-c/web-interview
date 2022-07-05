@@ -1,4 +1,4 @@
-# 官：说说Git常用的命令有哪些？
+# 说说Git常用的命令有哪些？
 
  ![](https://static.vue-js.com/f66b3290-f7af-11eb-bc6f-3f06e1491664.png)
 

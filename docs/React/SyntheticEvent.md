@@ -1,4 +1,4 @@
-# 官：说说React的事件机制？
+# 说说React的事件机制？
 
  ![](https://static.vue-js.com/f054f080-d86f-11eb-ab90-d9ae814b240d.png)
 

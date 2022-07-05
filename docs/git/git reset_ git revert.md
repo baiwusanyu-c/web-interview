@@ -1,4 +1,4 @@
-# 官：说说你对git reset 和 git revert 的理解？区别？
+# 说说你对git reset 和 git revert 的理解？区别？
 
 ![](https://static.vue-js.com/046b4440-ff74-11eb-bc6f-3f06e1491664.png)
 

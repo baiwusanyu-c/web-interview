@@ -1,4 +1,4 @@
-# 官：说说 Javascript 数字精度丢失的问题，如何解决？
+# 说说 Javascript 数字精度丢失的问题，如何解决？
 
  ![](https://static.vue-js.com/09646a10-86f4-11eb-85f6-6fac77c0c9b3.png)
 

@@ -1,4 +1,4 @@
-# 官：DNS协议 是什么？说说DNS 完整的查询过程?
+# DNS协议 是什么？说说DNS 完整的查询过程?
 
  ![](https://static.vue-js.com/88081710-b78f-11eb-ab90-d9ae814b240d.png)
 

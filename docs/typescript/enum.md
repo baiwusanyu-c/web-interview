@@ -1,4 +1,4 @@
-# 官：说说你对 TypeScript 中枚举类型的理解？应用场景？
+# 说说你对 TypeScript 中枚举类型的理解？应用场景？
 
 
  ![](https://static.vue-js.com/76173bf0-0b0c-11ec-a752-75723a64e8f5.png)

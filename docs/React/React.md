@@ -1,4 +1,4 @@
-# 官：说说对 React 的理解？有哪些特性？
+# 说说对 React 的理解？有哪些特性？
 
 ![](https://static.vue-js.com/671f5a90-d265-11eb-85f6-6fac77c0c9b3.png)
 

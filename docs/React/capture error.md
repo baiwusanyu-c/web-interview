@@ -1,4 +1,4 @@
-# 官：说说你在React项目是如何捕获错误的？
+# 说说你在React项目是如何捕获错误的？
 
  ![](https://static.vue-js.com/8db1b5c0-f288-11eb-85f6-6fac77c0c9b3.png)
 

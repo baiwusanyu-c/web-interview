@@ -1,4 +1,4 @@
-# 官：说说 git 发生冲突的场景？如何解决？
+# 说说 git 发生冲突的场景？如何解决？
 
  ![](https://static.vue-js.com/8aeccc40-fdb3-11eb-bc6f-3f06e1491664.png)
 

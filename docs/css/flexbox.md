@@ -1,4 +1,4 @@
-# 官：说说flexbox（弹性盒布局模型）,以及适用场景？
+# 说说flexbox（弹性盒布局模型）,以及适用场景？
 
  ![](https://static.vue-js.com/ef25b0a0-9837-11eb-ab90-d9ae814b240d.png)
 

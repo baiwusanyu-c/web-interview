@@ -1,4 +1,4 @@
-# 官：说说React diff的原理是什么？
+# 说说React diff的原理是什么？
 
  ![](https://static.vue-js.com/967e6150-ec91-11eb-85f6-6fac77c0c9b3.png)
 

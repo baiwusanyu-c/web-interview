@@ -1,4 +1,4 @@
-# 官：如何理解UDP 和 TCP? 区别? 应用场景?
+# 如何理解UDP 和 TCP? 区别? 应用场景?
 
  ![](https://static.vue-js.com/85ad65b0-b393-11eb-ab90-d9ae814b240d.png)
 

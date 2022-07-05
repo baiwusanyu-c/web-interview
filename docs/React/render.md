@@ -1,4 +1,4 @@
-# 官：说说React render方法的原理？在什么时候会被触发？
+# 说说React render方法的原理？在什么时候会被触发？
 
  ![](https://static.vue-js.com/3d855230-ec6d-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 官：说说你对事件循环的理解
+# 说说你对事件循环的理解
 
  ![](https://static.vue-js.com/50f062d0-7cb8-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 官：说说你对 TypeScript 中类的理解？应用场景？
+# 说说你对 TypeScript 中类的理解？应用场景？
 
  ![](https://static.vue-js.com/e4c19060-0cb4-11ec-a752-75723a64e8f5.png)
 

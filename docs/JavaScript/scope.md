@@ -1,4 +1,4 @@
-# 官：说说你对作用域链的理解
+# 说说你对作用域链的理解
 
  ![](https://static.vue-js.com/16f614a0-718f-11eb-ab90-d9ae814b240d.png)
 

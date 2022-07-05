@@ -1,4 +1,4 @@
-# 官：让Chrome支持小于12px 的文字方式有哪些？区别？
+# 让Chrome支持小于12px 的文字方式有哪些？区别？
 
 ![](https://static.vue-js.com/62945fd0-a334-11eb-85f6-6fac77c0c9b3.png)
 

@@ -1,4 +1,4 @@
-# 官：Vue中的$nextTick有什么作用？
+# Vue中的$nextTick有什么作用？
 
 ![](https://static.vue-js.com/76484d30-3aba-11eb-85f6-6fac77c0c9b3.png)
 

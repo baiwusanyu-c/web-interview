@@ -1,4 +1,4 @@
-# 官：说说 Node. js 有哪些全局对象？
+# 说说 Node. js 有哪些全局对象？
 
  ![](https://static.vue-js.com/79c7b100-c2a3-11eb-85f6-6fac77c0c9b3.png)
 

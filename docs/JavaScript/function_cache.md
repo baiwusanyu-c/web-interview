@@ -1,4 +1,4 @@
-# 官：Javascript中如何实现函数缓存？函数缓存有哪些应用场景？
+# Javascript中如何实现函数缓存？函数缓存有哪些应用场景？
 
  ![](https://static.vue-js.com/2ae9dda0-85fa-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-#  官：你是怎么理解ES6中 Promise的？使用场景？
+#  你是怎么理解ES6中 Promise的？使用场景？
 
 ![](https://static.vue-js.com/f033b160-5811-11eb-85f6-6fac77c0c9b3.png)
 

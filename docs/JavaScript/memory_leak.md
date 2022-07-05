@@ -1,4 +1,4 @@
-# 官：说说 JavaScript 中内存泄漏的几种情况？
+# 说说 JavaScript 中内存泄漏的几种情况？
 
   ![](https://static.vue-js.com/19f76b30-824d-11eb-ab90-d9ae814b240d.png)
 
