@@ -1,4 +1,4 @@
-# 面试官：Vue项目中你是如何解决跨域的呢？
+# 官：Vue项目中你是如何解决跨域的呢？
 
 ![](https://static.vue-js.com/db3045b0-4e31-11eb-85f6-6fac77c0c9b3.png)
 

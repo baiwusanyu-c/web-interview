@@ -1,4 +1,4 @@
-# 面试官：介绍一下grid网格布局
+# 官：介绍一下grid网格布局
 
  ![](https://static.vue-js.com/4d73e3d0-9a94-11eb-85f6-6fac77c0c9b3.png)
 

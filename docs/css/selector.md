@@ -1,4 +1,4 @@
-# 面试官：css选择器有哪些？优先级？哪些属性可以继承？
+# 官：css选择器有哪些？优先级？哪些属性可以继承？
 
  ![](https://static.vue-js.com/f7dcd330-8fe1-11eb-85f6-6fac77c0c9b3.png)
 

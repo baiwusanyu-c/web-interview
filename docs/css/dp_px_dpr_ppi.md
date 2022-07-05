@@ -1,4 +1,4 @@
-# 面试官：说说设备像素、css像素、设备独立像素、dpr、ppi 之间的区别？
+# 官：说说设备像素、css像素、设备独立像素、dpr、ppi 之间的区别？
 
  ![](https://static.vue-js.com/c4d9bfd0-91f2-11eb-85f6-6fac77c0c9b3.png)
 

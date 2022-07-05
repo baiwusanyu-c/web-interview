@@ -1,4 +1,4 @@
-# 面试官：说说webpack proxy工作原理？为什么能解决跨域?
+# 官：说说webpack proxy工作原理？为什么能解决跨域?
 
  ![](https://static.vue-js.com/5b871600-ace5-11eb-85f6-6fac77c0c9b3.png)
 

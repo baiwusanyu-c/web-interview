@@ -1,4 +1,4 @@
-# 面试官：说一下 GET 和 POST 的区别？
+# 官：说一下 GET 和 POST 的区别？
 
  ![](https://static.vue-js.com/6e8d19e0-bc3d-11eb-ab90-d9ae814b240d.png)
 

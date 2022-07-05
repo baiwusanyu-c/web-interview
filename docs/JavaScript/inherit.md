@@ -1,4 +1,4 @@
-# 面试官：Javascript如何实现继承？
+# 官：Javascript如何实现继承？
 
 ![](https://static.vue-js.com/5d9c4450-72a3-11eb-85f6-6fac77c0c9b3.png)
 

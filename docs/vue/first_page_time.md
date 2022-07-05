@@ -1,4 +1,4 @@
-# 面试官：SPA首屏加载速度慢的怎么解决？
+# 官：SPA首屏加载速度慢的怎么解决？
 
 ![image.png](https://static.vue-js.com/24617c00-3acc-11eb-ab90-d9ae814b240d.png)
 

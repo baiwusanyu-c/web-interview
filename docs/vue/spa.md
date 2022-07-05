@@ -1,4 +1,4 @@
-# 面试官：你对SPA单页面的理解，它的优缺点分别是什么？如何实现SPA应用呢
+# 官：你对SPA单页面的理解，它的优缺点分别是什么？如何实现SPA应用呢
 
 ![](https://static.vue-js.com/cf6aa320-3ac6-11eb-85f6-6fac77c0c9b3.png)
 

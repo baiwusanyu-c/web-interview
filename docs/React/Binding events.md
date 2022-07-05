@@ -1,4 +1,4 @@
-# 面试官：React事件绑定的方式有哪些？区别？
+# 官：React事件绑定的方式有哪些？区别？
 
  ![](https://static.vue-js.com/e21f5560-d8fa-11eb-85f6-6fac77c0c9b3.png)
 

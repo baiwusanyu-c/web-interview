@@ -1,4 +1,4 @@
-# 面试官：你在React项目中是如何使用Redux的? 项目结构是如何划分的？
+# 官：你在React项目中是如何使用Redux的? 项目结构是如何划分的？
 
  ![](https://static.vue-js.com/31a4aff0-e7dc-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 面试官：说说var、let、const之间的区别
+# 官：说说var、let、const之间的区别
 
 ![](https://static.vue-js.com/d2aba2e0-50f7-11eb-85f6-6fac77c0c9b3.png)
 

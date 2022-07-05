@@ -1,4 +1,4 @@
-# 面试官：说说你是如何提高组件的渲染效率的？在React中如何避免不必要的render？
+# 官：说说你是如何提高组件的渲染效率的？在React中如何避免不必要的render？
 
  ![](https://static.vue-js.com/de2d7e20-ecf8-11eb-85f6-6fac77c0c9b3.png)
 

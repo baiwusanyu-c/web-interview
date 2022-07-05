@@ -1,4 +1,4 @@
-# 面试官：说说你对git stash 的理解？应用场景？
+# 官：说说你对git stash 的理解？应用场景？
 
  ![](https://static.vue-js.com/83ddf210-fd6f-11eb-bc6f-3f06e1491664.png)
 

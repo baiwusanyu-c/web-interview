@@ -1,4 +1,4 @@
-# 面试官：说说webpack的构建流程?
+# 官：说说webpack的构建流程?
 
 ![](https://static.vue-js.com/96cf6840-a658-11eb-85f6-6fac77c0c9b3.png)
 

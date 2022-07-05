@@ -1,4 +1,4 @@
-# 面试官：说说地址栏输入 URL 敲下回车后发生了什么?
+# 官：说说地址栏输入 URL 敲下回车后发生了什么?
 
  ![](https://static.vue-js.com/11bf1f20-bdf4-11eb-85f6-6fac77c0c9b3.png)
 

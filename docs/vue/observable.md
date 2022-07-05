@@ -1,4 +1,4 @@
-# 面试官：Vue.observable你有了解过吗？说说看 
+# 官：Vue.observable你有了解过吗？说说看 
 
 ![](https://static.vue-js.com/193782e0-3e7b-11eb-ab90-d9ae814b240d.png)  
 

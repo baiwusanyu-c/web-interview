@@ -1,4 +1,4 @@
-# 面试官：说说 Real DOM 和 Virtual DOM 的区别？优缺点？
+# 官：说说 Real DOM 和 Virtual DOM 的区别？优缺点？
 
 ![](https://static.vue-js.com/f1d36350-d302-11eb-85f6-6fac77c0c9b3.png)
 

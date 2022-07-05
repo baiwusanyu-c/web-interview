@@ -1,4 +1,4 @@
-# 面试官：说说对React refs 的理解？应用场景？ 
+# 官：说说对React refs 的理解？应用场景？ 
 
  ![](https://static.vue-js.com/25162040-de02-11eb-ab90-d9ae814b240d.png)
 

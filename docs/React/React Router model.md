@@ -1,4 +1,4 @@
-# 面试官：说说React Router有几种模式？实现原理？
+# 官：说说React Router有几种模式？实现原理？
 
 
 

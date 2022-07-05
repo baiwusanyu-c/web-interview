@@ -1,4 +1,4 @@
-# 面试官：typeof 与 instanceof 区别
+# 官：typeof 与 instanceof 区别
 
  ![](https://static.vue-js.com/3fc158f0-7710-11eb-ab90-d9ae814b240d.png)
 

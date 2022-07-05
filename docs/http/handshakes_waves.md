@@ -1,4 +1,4 @@
-# 面试官：说说TCP为什么需要三次握手和四次挥手？
+# 官：说说TCP为什么需要三次握手和四次挥手？
 
  ![](https://static.vue-js.com/ef4696a0-beb9-11eb-ab90-d9ae814b240d.png)
 

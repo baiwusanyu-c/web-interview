@@ -1,4 +1,4 @@
-# 面试官：说说React Jsx转换成真实DOM过程？
+# 官：说说React Jsx转换成真实DOM过程？
 
  ![](https://static.vue-js.com/1d340620-f00a-11eb-ab90-d9ae814b240d.png)
 

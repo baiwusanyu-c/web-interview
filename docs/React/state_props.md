@@ -1,4 +1,4 @@
-# 面试官：state 和 props 有什么区别？
+# 官：state 和 props 有什么区别？
 
 ![](https://static.vue-js.com/7f272780-d440-11eb-ab90-d9ae814b240d.png)
 

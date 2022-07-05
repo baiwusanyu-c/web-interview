@@ -1,4 +1,4 @@
-# 面试官：说说对 TypeScript 中命名空间与模块的理解？区别？
+# 官：说说对 TypeScript 中命名空间与模块的理解？区别？
 
  ![](https://static.vue-js.com/9378d760-137e-11ec-8e64-91fdec0f05a1.png)
 

@@ -1,4 +1,4 @@
-# 面试官：说说 HTTP 常见的请求头有哪些? 作用？
+# 官：说说 HTTP 常见的请求头有哪些? 作用？
 
  ![](https://static.vue-js.com/964abb00-bc69-11eb-85f6-6fac77c0c9b3.png)
 

@@ -1,4 +1,4 @@
-# 面试官：说说对WebSocket的理解？应用场景？
+# 官：说说对WebSocket的理解？应用场景？
 
  ![](https://static.vue-js.com/a358a8c0-c0f1-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 面试官：说说你对 linux 用户管理的理解？相关的命令有哪些？
+# 官：说说你对 linux 用户管理的理解？相关的命令有哪些？
 
  ![](https://static.vue-js.com/8d8d9d70-0417-11ec-8e64-91fdec0f05a1.png)
 

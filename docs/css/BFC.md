@@ -1,4 +1,4 @@
-# 面试官：谈谈你对BFC的理解？
+# 官：谈谈你对BFC的理解？
 
 ![](https://static.vue-js.com/c3d68290-9511-11eb-85f6-6fac77c0c9b3.png)
 

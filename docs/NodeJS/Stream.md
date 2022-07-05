@@ -1,4 +1,4 @@
-# 面试官：说说对 Node 中的 Stream 的理解？应用场景？
+# 官：说说对 Node 中的 Stream 的理解？应用场景？
 
  ![](https://static.vue-js.com/a5df3c60-c76f-11eb-ab90-d9ae814b240d.png)
 

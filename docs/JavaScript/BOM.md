@@ -1,4 +1,4 @@
-# 面试官：说说你对BOM的理解，常见的BOM对象你了解哪些？
+# 官：说说你对BOM的理解，常见的BOM对象你了解哪些？
 
  ![](https://static.vue-js.com/3e191c40-8089-11eb-85f6-6fac77c0c9b3.png)
 

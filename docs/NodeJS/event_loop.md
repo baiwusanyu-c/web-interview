@@ -1,4 +1,4 @@
-# 面试官：说说对Nodejs中的事件循环机制理解?
+# 官：说说对Nodejs中的事件循环机制理解?
 
  ![](https://static.vue-js.com/e0faf3c0-c90e-11eb-ab90-d9ae814b240d.png)
 

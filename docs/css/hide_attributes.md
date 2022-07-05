@@ -1,4 +1,4 @@
-# 面试官：css中，有哪些方式可以隐藏页面元素？区别?
+# 官：css中，有哪些方式可以隐藏页面元素？区别?
 
 ![](https://static.vue-js.com/ccf96f50-929a-11eb-ab90-d9ae814b240d.png)
 

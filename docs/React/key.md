@@ -1,4 +1,4 @@
-# 面试官：React中的key有什么作用？
+# 官：React中的key有什么作用？
 
  ![](https://static.vue-js.com/31677360-dd69-11eb-ab90-d9ae814b240d.png)
 

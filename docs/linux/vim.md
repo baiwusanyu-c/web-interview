@@ -1,4 +1,4 @@
-# 面试官：说说 linux 系统下 文本编辑常用的命令有哪些？
+# 官：说说 linux 系统下 文本编辑常用的命令有哪些？
 
  ![](https://static.vue-js.com/1062b8b0-049b-11ec-8e64-91fdec0f05a1.png)
 

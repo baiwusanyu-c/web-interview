@@ -1,4 +1,4 @@
-# 面试官：说说Node中的EventEmitter? 如何实现一个EventEmitter?
+# 官：说说Node中的EventEmitter? 如何实现一个EventEmitter?
 
  ![](https://static.vue-js.com/16b10390-c83a-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 面试官：说说如何在Vue项目中应用TypeScript？
+# 官：说说如何在Vue项目中应用TypeScript？
 
 
 

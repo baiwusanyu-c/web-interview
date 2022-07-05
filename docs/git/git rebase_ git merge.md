@@ -1,4 +1,4 @@
-# 面试官：说说你对git rebase 和 git merge的理解？区别？
+# 官：说说你对git rebase 和 git merge的理解？区别？
 
 
 

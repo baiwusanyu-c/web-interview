@@ -1,4 +1,4 @@
-# 面试官：说说webpack中常见的Plugin？解决了什么问题？
+# 官：说说webpack中常见的Plugin？解决了什么问题？
 
  ![](https://static.vue-js.com/8d3978a0-a7c2-11eb-85f6-6fac77c0c9b3.png)
 

@@ -1,4 +1,4 @@
-# 面试官：如何实现jwt鉴权机制？说说你的思路
+# 官：如何实现jwt鉴权机制？说说你的思路
 
  ![](https://static.vue-js.com/efff62b0-cd88-11eb-ab90-d9ae814b240d.png)
 

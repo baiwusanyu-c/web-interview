@@ -1,4 +1,4 @@
-# 面试官：如何理解OSI七层模型?
+# 官：如何理解OSI七层模型?
 
  ![](https://static.vue-js.com/e2e1b910-b61e-11eb-ab90-d9ae814b240d.png)
 

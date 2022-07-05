@@ -1,4 +1,4 @@
-# 面试官：说说 linux系统下 文件操作常用的命令有哪些？
+# 官：说说 linux系统下 文件操作常用的命令有哪些？
 
 ![](https://static.vue-js.com/6cb38ac0-03c1-11ec-a752-75723a64e8f5.png)
 

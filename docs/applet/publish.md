@@ -1,4 +1,4 @@
-# 面试官：说说微信小程序的发布流程？
+# 官：说说微信小程序的发布流程？
 
  ![](https://static.vue-js.com/d5cccdf0-3652-11ec-8e64-91fdec0f05a1.png)
 

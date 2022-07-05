@@ -1,4 +1,4 @@
-# 面试官：说说你对 TypeScript 中函数的理解？与 JavaScript 函数的区别？
+# 官：说说你对 TypeScript 中函数的理解？与 JavaScript 函数的区别？
 
 
 

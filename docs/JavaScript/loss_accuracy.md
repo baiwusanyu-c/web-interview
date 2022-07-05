@@ -1,10 +1,10 @@
-# 面试官：说说 Javascript 数字精度丢失的问题，如何解决？
+# 官：说说 Javascript 数字精度丢失的问题，如何解决？
 
  ![](https://static.vue-js.com/09646a10-86f4-11eb-85f6-6fac77c0c9b3.png)
 
 ## 一、场景复现
 
-一个经典的面试题
+一个经典的题
 
 ```js
 0.1 + 0.2 === 0.3 // false

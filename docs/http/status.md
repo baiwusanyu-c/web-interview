@@ -1,4 +1,4 @@
-# 面试官：说说HTTP 常见的状态码有哪些，适用场景？
+# 官：说说HTTP 常见的状态码有哪些，适用场景？
 
  ![](https://static.vue-js.com/038831d0-bbc9-11eb-ab90-d9ae814b240d.png)
 

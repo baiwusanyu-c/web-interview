@@ -1,4 +1,4 @@
-# 面试官：说说如何在 React 项目中应用 TypeScript？
+# 官：说说如何在 React 项目中应用 TypeScript？
 
 ![](https://static.vue-js.com/a98974e0-13bc-11ec-a752-75723a64e8f5.png)
 

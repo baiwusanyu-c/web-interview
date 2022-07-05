@@ -1,4 +1,4 @@
-# 面试官：Vue实例挂载的过程
+# 官：Vue实例挂载的过程
 
 ![](https://static.vue-js.com/63194810-3a09-11eb-85f6-6fac77c0c9b3.png)
 

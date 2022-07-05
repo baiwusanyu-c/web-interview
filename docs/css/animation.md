@@ -1,4 +1,4 @@
-# 面试官：css3动画有哪些？
+# 官：css3动画有哪些？
 
  ![](https://static.vue-js.com/d12e2380-9c0a-11eb-ab90-d9ae814b240d.png)
 

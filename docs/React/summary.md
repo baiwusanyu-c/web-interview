@@ -1,4 +1,4 @@
-# 面试官：说说你在使用React 过程中遇到的常见问题？如何解决?
+# 官：说说你在使用React 过程中遇到的常见问题？如何解决?
 
 
  ![](https://static.vue-js.com/7efcd400-f47d-11eb-ab90-d9ae814b240d.png)

@@ -1,4 +1,4 @@
-# 面试官：说说你对 TypeScript 装饰器的理解？应用场景？
+# 官：说说你对 TypeScript 装饰器的理解？应用场景？
 
  ![](https://static.vue-js.com/f8905dd0-111c-11ec-8e64-91fdec0f05a1.png)
 

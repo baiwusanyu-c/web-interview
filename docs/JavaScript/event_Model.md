@@ -1,4 +1,4 @@
-# 面试官：说说JavaScript中的事件模型
+# 官：说说JavaScript中的事件模型
 
 ![](https://static.vue-js.com/32a182f0-74cf-11eb-85f6-6fac77c0c9b3.png)
 

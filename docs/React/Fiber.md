@@ -1,4 +1,4 @@
-# 面试官：说说对Fiber架构的理解？解决了什么问题？
+# 官：说说对Fiber架构的理解？解决了什么问题？
 
  ![](https://static.vue-js.com/554da6d0-ed24-11eb-85f6-6fac77c0c9b3.png)
 

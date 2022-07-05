@@ -1,4 +1,4 @@
-# 面试官：为什么说HTTPS比HTTP安全? HTTPS是如何保证安全的？
+# 官：为什么说HTTPS比HTTP安全? HTTPS是如何保证安全的？
 
  ![](https://static.vue-js.com/b5512250-b2ff-11eb-ab90-d9ae814b240d.png)
 

@@ -1,4 +1,4 @@
-# 面试官：说说React服务端渲染怎么做？原理是什么？
+# 官：说说React服务端渲染怎么做？原理是什么？
 
  ![](https://static.vue-js.com/8c93cbe0-f3f7-11eb-85f6-6fac77c0c9b3.png)
 
