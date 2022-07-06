@@ -21,7 +21,7 @@ Function.prototype.myBind1 = function (target,...arg){
 }
 
 Function.prototype.myBind2 = function (target,...arg){
-  if(typeof this === 'function'){
+  if(typeof this !== 'function'){
     throw Error
   }
   let orgThis = this
@@ -34,4 +34,21 @@ Function.prototype.myBind2 = function (target,...arg){
   }
   fn.prototype = orgThis.prototype
   return fn
+}
+
+Function.prototype.myBind3 = function (target,...arg){
+  if(typeof this !== "function"){
+    throw Error
+  }
+  let orgThis = this
+  let orgArg = arg
+  function fn(...argFn){
+    if(this instanceof fn){
+      return new orgThis(...orgArg,...argFn)
+    }
+    return orgThis.apply(target,orgArg.concat(argFn))
+  }
+  fn.prototype = orgThis.prototype
+  return fn
+
 }
