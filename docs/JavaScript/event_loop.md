@@ -95,8 +95,8 @@ console.log(3)
 
 按照这个流程，它的执行机制是：
 
-- 执行一个宏任务，如果遇到微任务就将它放到微任务的事件队列中
-- 当前宏任务执行完成后，会查看微任务的事件队列，然后将里面的所有微任务依次执行完
+- 每执行一个宏任务，如果遇到微任务就将它放到微任务的事件队列中
+- 当前宏任务执行完成后，会查看微任务的事件队列，然后将里面的所有微任务依次执行完，否则执行下一个宏任务
 
 
 
@@ -193,26 +193,26 @@ console.log(3)
 
 ```js
 async function async1() {
-    console.log('async1 start')
+    console.log('async1 start')  
     await async2()
-    console.log('async1 end')
+    console.log('async1 end') 
 }
 async function async2() {
-    console.log('async2')
+    console.log('async2') 
 }
-console.log('script start')
+console.log('script start') 
 setTimeout(function () {
-    console.log('settimeout')
+    console.log('settimeout') 
 })
 async1()
 new Promise(function (resolve) {
-    console.log('promise1')
+    console.log('promise1')  
     resolve()
 }).then(function () {
-    console.log('promise2')
+    console.log('promise2') 
 })
-console.log('script end')
-```
+console.log('script end') 
+``` 
 
 分析过程：
 
