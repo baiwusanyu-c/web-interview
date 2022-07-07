@@ -226,3 +226,55 @@ console.log('script end')
 
 所以最后的结果是：`script start`、`async1 start`、`async2`、`promise1`、`script end`、`async1 end`、`promise2`、`settimeout`
 
+
+
+# 修正
+js中的内存分为 堆内存(heap) 和 栈内存(stack), 堆内存 中存的是我们声明的object类型的数据，栈内存 中存的是 基本数据类型 以及 函数执行时的运行空间。
+我们的 同步 代码就放在 执行栈 中，那异步代码呢？
+浏览器会将 dom事件 ajax setTimeout等异步代码放到队列中，等待执行栈中的代码都执行完毕，才会执行队列中的代码，是不是有点像发布订阅模式。
+
+异步任务 分为 微任务(microtask) 和 宏任务(task)，执行的顺序是 执行栈中的代码 => 微任务 => 宏任务
+
+执行栈
+执行栈中的代码永远最先执行
+微任务(microtask): promise MutationObserver...
+当执行栈中的代码执行完毕，会在执行宏任务队列之前先看看微任务队列中有没有任务，如果有会先将微任务队列中的任务清空才会去执行宏任务队列
+宏任务(task): setTimeout setInterval setImmediate(IE专用) messageChannel...
+等待执行栈和微任务队列都执行完毕才会执行，并且在执行完每一个宏任务之后，会去看看微任务队列有没有新添加的任务，如果有，会先将微任务队列中的任务清空，才会继续执行下一个宏任务
+
+Node.js 与 浏览器环境下事件循环的区别
+Node.js 在升级到 11.x 后，Event Loop 运行原理发生了变化，一旦执行一个阶段里的一个宏任务(setTimeout,setInterval 和 setImmediate) 就立刻执行微任务队列，这点就跟浏览器端一致。
+
+
+其中libuv引擎中的事件循环分为 6 个阶段，它们会按照顺序反复运行。每当进入某一个阶段的时候，都会从对应的回调队列中取出函数去执行。当队列为空或者执行的回调函数数量到达系统设定的阈值，就会进入下一阶段。
+
+
+从上图中，大致看出node中的事件循环的顺序：
+外部输入数据-->轮询阶段(poll)-->检查阶段(check)-->关闭事件回调阶段(close callback)-->定时器检测阶段(timer)-->I/O事件回调阶段(I/O callbacks)-->闲置阶段(idle, prepare)-->轮询阶段（按照该顺序反复运行）...
+timers 阶段：这个阶段执行timer（setTimeout、setInterval）的回调
+I/O callbacks 阶段：处理一些上一轮循环中的少数未执行的 I/O 回调
+idle, prepare 阶段：仅node内部使用
+poll 阶段：获取新的I/O事件, 适当的条件下node将阻塞在这里
+check 阶段：执行 setImmediate() 的回调
+close callbacks 阶段：执行 socket 的 close 事件回调
+注意：上面六个阶段都不包括 process.nextTick()(下文会介绍)
+接下去我们详细介绍timers、poll、check这3个阶段，因为日常开发中的绝大部分异步任务都是在这3个阶段处理的。
+(1) timer
+timers 阶段会执行 setTimeout 和 setInterval 回调，并且是由 poll 阶段控制的。 同样，在 Node 中定时器指定的时间也不是准确时间，只能是尽快执行。
+(2) poll
+poll 是一个至关重要的阶段，这一阶段中，系统会做两件事情
+1.回到 timer 阶段执行回调
+2.执行 I/O 回调
+并且在进入该阶段时如果没有设定了 timer 的话，会发生以下两件事情
+如果 poll 队列不为空，会遍历回调队列并同步执行，直到队列为空或者达到系统限制
+如果 poll 队列为空时，会有两件事发生
+如果有 setImmediate 回调需要执行，poll 阶段会停止并且进入到 check 阶段执行回调
+如果没有 setImmediate 回调需要执行，会等待回调被加入到队列中并立即执行回调，这里同样会有个超时时间设置防止一直等待下去
+当然设定了 timer 的话且 poll 队列为空，则会判断是否有 timer 超时，如果有的话会回到 timer 阶段执行回调。
+Node端事件循环中的异步队列也是这两种：macro（宏任务）队列和 micro（微任务）队列。
+常见的 macro-task 比如：setTimeout、setInterval、 setImmediate、script（整体代码）、 I/O 操作等。
+常见的 micro-task 比如: process.nextTick、new Promise().then(回调)等。
+
+process.nextTick
+这个函数其实是独立于 Event Loop 之外的，它有一个自己的队列，当每个阶段完成后，如果存在 nextTick 队列，就会清空队列中的所有回调函数，并且优先于其他 microtask 执行。
+

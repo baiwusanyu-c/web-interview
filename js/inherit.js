@@ -54,3 +54,50 @@ function inherit2(){
   }
   childPropto.prototype = new parent()
 }
+
+const inhert3 = function (){
+  function parent(){
+    this.name = 'parent'
+  }
+  function child(){
+    parent.call(this)
+    this.name = 'child'
+  }
+  function clone(childClass,parentClass){
+    childClass.prototype = Object.create(parentClass.prototype)
+    childClass.prototype.constructor = child
+  }
+  // 构造器继承
+  function childConstructor(){
+    parent.call(this)
+    this.name = 'child'
+  }
+  // 原型链继承
+  function childProto(){
+    this.name = 'child'
+  }
+  childProto.prototype = new parent()
+}
+function inhert4(){
+  function parent(){
+    this.name = 'parent'
+  }
+  function child(){
+    parent.call(this)
+    this.name = 'child'
+  }
+
+  function clone() {
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = child()
+  }
+
+  function childConstructor(){
+    parent.call(this)
+    this.name = 'child'
+  }
+  function childProto(){
+    this.name = 'child'
+  }
+  childProto.prototype = new parent()
+}
