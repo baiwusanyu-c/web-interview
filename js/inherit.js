@@ -101,3 +101,24 @@ function inhert4(){
   }
   childProto.prototype = new parent()
 }
+function inhert4(){
+  function parent(){
+    this.name = 'parent'
+  }
+  function child(){
+    parent.call(this)
+    this.name = 'child'
+  }
+  function extend(child,parent){
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = child
+  }
+  function childProto(){
+    this.name = 'child'
+  }
+  childProto.prototype = new parent()
+  function childConstructor(){
+    parent.call(this)
+    this.name = 'child'
+  }
+}
