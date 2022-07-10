@@ -100,3 +100,35 @@ Function.prototype.bind6 = function (target,...arg){
   fn.prototype = orgThis.prototype
   return fn
 }
+
+Function.prototype.bind7 = function (target,...arg){
+  if(typeof target !== 'function'){
+    throw Error
+  }
+  let orgThis = this
+  let orgArg = arg
+  function fn(...fnArg){
+    if(this instanceof fn){
+      return new orgThis(...orgArg,...fnArg)
+    }
+    return orgThis.call(target,orgArg.concat(fnArg))
+  }
+  fn.prototype = orgThis.prototype
+  return fn
+}
+
+Function.prototype.bind8 = function (target,...arg){
+  if(typeof target !== 'function'){
+    throw Error
+  }
+  let orgThis = this
+  let orgArg = arg
+  function fn(...argFn){
+    if(this instanceof fn){
+      return new orgThis(...orgArg,...argFn)
+    }
+    return orgThis.call(target,orgArg.concat(argFn))
+  }
+  fn.prototype = orgThis.prototype
+  return fn
+}

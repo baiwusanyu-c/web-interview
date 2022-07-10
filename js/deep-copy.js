@@ -105,3 +105,20 @@ const deepCopy6 = function (target,hash=new WeakMap()){
   }
   return copyTarget
 }
+
+function deepCopy6(target,hash=new WeakMap){
+  if(target === null || target === undefined) return target
+  if(target instanceof Date) return new Date(target)
+  if(target instanceof RegExp) return new RegExp(target)
+  if(typeof target === 'function') return target
+  if (hash.get(target)) return hash.get(target)
+
+  let copyTarget = new target.constructor()
+  hash.set(target,copyTarget)
+  for (let targetKey in target) {
+    if(target.hasOwnProperty(targetKey)){
+      copyTarget = deepCopy6(target[targetKey],hash)
+    }
+  }
+  return copyTarget
+}

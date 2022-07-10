@@ -122,3 +122,27 @@ function inhert4(){
     this.name = 'child'
   }
 }
+
+function inhert(){
+  function parent(){
+    this.name = 'parent'
+  }
+  function child(){
+    parent.call(this)
+    this.name = 'child'
+  }
+  function clone(){
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = child
+  }
+  ///
+  function childConstructor(){
+    parent.call(this)
+    this.name = 'child'
+  }
+  function childProto(){
+
+    this.name = 'child'
+  }
+  childProto.prototype = new parent()
+}
