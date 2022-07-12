@@ -47,7 +47,24 @@ function throttled3(fn,delay){
             fn.apply(_this,arg)
             startTime = Date.now()
         }else{
-            timer = setTimeout(fn,delay)
+            timer = setTimeout(fn,yuTime)
+        }
+    }
+}
+
+function throttled4(fn,delay){
+    let timer
+    let startTime = Date.now()
+    return function (){
+        let _this = this
+        let curTime = Date.now()
+        let arg = [...arguments]
+        let yuTime = delay - (curTime - startTime)
+        if(yuTime <= 0){
+            fn.apply(_this,arg)
+            startTime = Date.now()
+        }else {
+            timer = setTimeout(fn,yuTime)
         }
     }
 }
