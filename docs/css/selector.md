@@ -27,6 +27,23 @@ CSS选择器是CSS规则的第一部分
 </div>
 ```
 
+
+CSS选择符：
+id选择器(#myid)、
+类选择器(.myclassname)、
+标签选择器(div, h1, p)、
+相邻选择器(h1 + p)、
+子选择器（ul > li）、
+后代选择器（li a）、
+通配符选择器（*）、
+属性选择器（a[rel=“external”]）、
+伪类选择器（a:hover, li:nth-child）
+
+优先级（就近原则）：!important > [ id > class > tag ]
+!important 比内联优先级高
+
+
+
 关于`css`属性选择器常用的有：
 
 - id选择器（#box），选择id为box的元素
@@ -38,6 +55,7 @@ CSS选择器是CSS规则的第一部分
 - 子选择器（.one>one_1），选择父元素为.one的所有.one_1的元素
 - 相邻同胞选择器（.one+.two），选择紧接在.one之后的所有.two元素
 - 群组选择器（div,p），选择div、p的所有元素
+
 
 
 
