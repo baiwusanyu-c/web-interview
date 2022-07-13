@@ -60,6 +60,14 @@ document.cookie =name=bb; domain=aa.net; path=/  # 客户端设置
 
 最后`cookie`的删除，最常用的方法就是给`cookie`设置一个过期的事件，这样`cookie`过期后会被浏览器删除
 
+Secure：https才保存
+Max-Age：过期秒数
+expire：过期时间
+name: 名称
+value：值
+HttpOnly：阻止js读写
+Path：可以带上cookie的路径
+domain:生效的域名范围
 
 
 ### localStorage
@@ -153,6 +161,12 @@ console.log(localStorage.getItem('key')); // '[object, Object]'
 - 在操作结果上进行一些操作（可以在 `request `对象中找到）
 
 关于使用`indexdb`的使用会比较繁琐，大家可以通过使用`Godb.js`库进行缓存，最大化的降低操作难度
+
+open  开启数据库，没有就自动创建
+close 关闭数据库
+deleteDatabase 删除数据库
+deleteObjectStore 删除表
+createObjectStore 创建表
 
 
 
