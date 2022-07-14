@@ -56,7 +56,7 @@ myCSS.href = "mystyles.css";
 document.head.insertBefore( myCSS, document.head.childNodes[ document.head.childNodes.length - 1 ].nextSibling );
 ```
 
-- 设置link标签media属性为noexis，浏览器会认为当前样式表不适用当前类型，会在不阻塞页面渲染的情况下再进行下载。加载完成后，将`media`的值设为`screen`或`all`，从而让浏览器开始解析CSS
+- 设置link标签media属性为noexist，浏览器会认为当前样式表不适用当前类型，会在不阻塞页面渲染的情况下再进行下载。加载完成后，将`media`的值设为`screen`或`all`，从而让浏览器开始解析CSS
 
 ```html
 <link rel="stylesheet" href="mystyles.css" media="noexist" onload="this.media='all'">
