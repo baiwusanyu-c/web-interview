@@ -26,6 +26,7 @@ function throttled2(fn,delay){
         let curTime = Date.now()
         let arg = [...arguments]
         let yuTime = delay - (curTime - startTime)
+        if(timer) clearTimeout(timer)
         if(yuTime <= 0){
             fn.apply(_this,arg)
             startTime = Date.now()
@@ -43,6 +44,7 @@ function throttled3(fn,delay){
         let arg = [...arguments]
         let curTime = Date.now()
         let yuTime = delay - (curTime - startTime)
+        if(timer) clearTimeout(timer)
         if(yuTime <= 0){
             fn.apply(_this,arg)
             startTime = Date.now()
@@ -60,10 +62,27 @@ function throttled4(fn,delay){
         let curTime = Date.now()
         let arg = [...arguments]
         let yuTime = delay - (curTime - startTime)
+        if(timer) clearTimeout(timer)
         if(yuTime <= 0){
             fn.apply(_this,arg)
             startTime = Date.now()
         }else {
+            timer = setTimeout(fn,yuTime)
+        }
+    }
+}
+function throttled4(fn,delay){
+    let timer
+    let startTime = Date.now()
+    return function (...arg){
+        let _this = this
+        let curTime = Date.now()
+        let yuTime = delay - (curTime - startTime)
+        if(timer) clearTimeout(timer)
+        if(yuTime <= 0){
+            fn.apply(_this,arg)
+            startTime = Date.now()
+        }else{
             timer = setTimeout(fn,yuTime)
         }
     }

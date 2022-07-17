@@ -92,3 +92,24 @@ function debounce4(fn,delay,immediate){
 
     }
 }
+function debounce4(fn,delay,immediate){
+    let timer
+    return function (...arg){
+        let _this = this
+        if(timer) clearTimeout(timer)
+        if(immediate){
+            let callNow = !timer
+            timer =  setTimeout(()=>{
+                timer = null
+            },delay)
+            if(callNow){
+                fn.apply(_this,arg)
+            }
+
+        }else{
+            timer = setTimeout(()=>{
+                fn.apply(_this,arg)
+            },delay)
+        }
+    }
+}
