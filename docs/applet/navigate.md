@@ -110,7 +110,7 @@
 
 其中关于它们的页面栈的关系如下：
 
-- avigateTo 新页面入栈
+- navigateTo 新页面入栈
 
 - redirectTo 当前页面出栈，新页面入栈
 - navigateBack 页面不断出栈，直到目标返回页，新页面入栈
