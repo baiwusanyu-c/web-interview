@@ -71,7 +71,7 @@ function throttled4(fn,delay){
         }
     }
 }
-function throttled4(fn,delay){
+function throttled5(fn,delay){
     let timer
     let startTime = Date.now()
     return function (...arg){
