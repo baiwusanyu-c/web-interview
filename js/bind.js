@@ -133,8 +133,24 @@ Function.prototype.bind8 = function (target,...arg){
   return fn
 }
 
-Function.prototype.bind9 = function (fn,...arg){
-  if(typeof fn !== 'function'){
+Function.prototype.bind9 = function (target,...arg){
+  if(typeof this !== 'function'){
+    throw Error
+  }
+  let orgThis = this
+  let orgArg = arg
+  function fn(...argFn){
+    if(this instanceof fn){
+      return new orgThis(...orgArg,...argFn)
+    }
+    return orgThis.apply(target,orgArg.concat(argFn))
+  }
+  fn.prototype = orgThis.prototype;
+  return fn
+}
+
+Function.prototype.bind10 = function (target,...arg){
+  if(typeof target !== "function") {
     throw Error
   }
   let orgThis = this
@@ -143,7 +159,7 @@ Function.prototype.bind9 = function (fn,...arg){
     if(this instanceof fn){
       return new orgThis(...orgArg,...fnArg)
     }
-    return orgThis.apply(this,orgArg.concat(fnArg))
+    return orgThis.apply(target,arg.concat(fnArg))
   }
   fn.prototype = orgThis.prototype
   return fn

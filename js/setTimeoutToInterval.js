@@ -29,3 +29,12 @@ function mySetInterval(...arg){
 mySetInterval.clear = function (){
     clearTimeout(mySetInterval.timer)
 }
+function mySetinterVal(...arg){
+    mySetinterVal.timer = setTimeout(()=>{
+        arg[0]()
+        mySetinterVal(...arg)
+    },arg[1])
+}
+mySetinterVal.clear = function (){
+    clearTimeout(mySetInterval.timer)
+}

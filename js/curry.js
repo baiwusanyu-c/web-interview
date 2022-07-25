@@ -38,7 +38,7 @@ function curry2(fn,len){
         if(arg.length < length){
             return curry2(fn.bind(_this,...arg),length - arg.length)
         }else{
-            return fn.apply(_this,...arg)
+            return fn.apply(_this,[...arg])
         }
     }
 }
@@ -66,6 +66,18 @@ function curry4(fn,len){
             return curry4(fn.bind(_this,...arg),length - arg.length)
         }else{
             return fn.apply(_this,arg)
+        }
+    }
+}
+
+function curry5(fn,len){
+    let leng = fn.length || len
+    return function (...arg){
+        let args = [...arg]
+        if(arg.length < leng){
+            return curry5(fn.bind(this,arg, leng - arg.length))
+        }else{
+            return fn.apply(this,args)
         }
     }
 }
