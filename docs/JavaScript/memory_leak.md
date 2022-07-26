@@ -58,7 +58,7 @@ Javascript 具有自动垃圾回收机制（GC：Garbage Collecation），也就
 举个例子：
 
 ```js
-var m = 0,n = 19 // 把 m,n,add() 标记为进入环境。
+var m = 0,n = 19 // 把 m,n,add()（函数被提升） 标记为进入环境。
 add(m, n) // 把 a, b, c标记为进入环境。
 console.log(n) // a,b,c标记为离开环境，等待垃圾回收。
 function add(a, b) {

@@ -123,7 +123,7 @@ function inhert4(){
   }
 }
 
-function inhert(){
+function inhert5(){
   function parent(){
     this.name = 'parent'
   }
@@ -145,4 +145,31 @@ function inhert(){
     this.name = 'child'
   }
   childProto.prototype = new parent()
+}
+
+
+function inhert6 (){
+  function parent(){
+    this.name = 1
+  }
+  function child(){
+    parent.call(this)
+    this.name = 2
+  }
+  function jszh(child,parent){
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = parent
+  }
+
+  function zuhe(){
+    parent.call(this)
+    this.name = 2
+  }
+
+  // 原型链继承
+
+  function yxljc(){
+    this.name = 3
+  }
+  yxljc.prototype = new parent()
 }
