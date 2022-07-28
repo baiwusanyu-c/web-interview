@@ -53,43 +53,43 @@
 先来一个构造函数：执行初始化，对`data`执行响应化处理
 
 ```js
-class Vue {  
-  constructor(options) {  
-    this.$options = options;  
-    this.$data = options.data;  
-        
-    // 对data选项做响应式处理  
-    observe(this.$data);  
-        
-    // 代理data到vm上  
-    proxy(this);  
-        
-    // 执行编译  
-    new Compile(options.el, this);  
-  }  
+class Vue {  
+  constructor(options) {  
+    this.$options = options;  
+    this.$data = options.data;  
+        
+    // 对data选项做响应式处理  
+    observe(this.$data);  
+        
+    // 代理data到vm上  
+    proxy(this);  
+        
+    // 执行编译  
+    new Compile(options.el, this);  
+  }  
 }  
 ```
 
 对`data`选项执行响应化具体操作
 
 ```js
-function observe(obj) {  
-  if (typeof obj !== "object" || obj == null) {  
-    return;  
-  }  
-  new Observer(obj);  
+function observe(obj) {  
+  if (typeof obj !== "object" || obj == null) {  
+    return;  
+  }  
+  new Observer(obj);  
 }  
   
-class Observer {  
-  constructor(value) {  
-    this.value = value;  
-    this.walk(value);  
-  }  
-  walk(obj) {  
-    Object.keys(obj).forEach((key) => {  
-      defineReactive(obj, key, obj[key]);  
-    });  
-  }  
+class Observer {  
+  constructor(value) {  
+    this.value = value;  
+    this.walk(value);  
+  }  
+  walk(obj) {  
+    Object.keys(obj).forEach((key) => {  
+      defineReactive(obj, key, obj[key]);  
+    });  
+  }  
 }  
 ```
 
@@ -100,33 +100,33 @@ class Observer {
  ![](https://static.vue-js.com/f27e19c0-3ac9-11eb-85f6-6fac77c0c9b3.png)
 
 ```js
-class Compile {  
-  constructor(el, vm) {  
-    this.$vm = vm;  
-    this.$el = document.querySelector(el);  // 获取dom  
-    if (this.$el) {  
-      this.compile(this.$el);  
-    }  
-  }  
-  compile(el) {  
-    const childNodes = el.childNodes;   
-    Array.from(childNodes).forEach((node) => { // 遍历子元素  
-      if (this.isElement(node)) {   // 判断是否为节点  
-        console.log("编译元素" + node.nodeName);  
-      } else if (this.isInterpolation(node)) {  
-        console.log("编译插值⽂本" + node.textContent);  // 判断是否为插值文本 {{}}  
-      }  
-      if (node.childNodes && node.childNodes.length > 0) {  // 判断是否有子元素  
-        this.compile(node);  // 对子元素进行递归遍历  
-      }  
-    });  
-  }  
-  isElement(node) {  
-    return node.nodeType == 1;  
-  }  
-  isInterpolation(node) {  
-    return node.nodeType == 3 && /\{\{(.*)\}\}/.test(node.textContent);  
-  }  
+class Compile {  
+  constructor(el, vm) {  
+    this.$vm = vm;  
+    this.$el = document.querySelector(el);  // 获取dom  
+    if (this.$el) {  
+      this.compile(this.$el);  
+    }  
+  }  
+  compile(el) {  
+    const childNodes = el.childNodes;   
+    Array.from(childNodes).forEach((node) => { // 遍历子元素  
+      if (this.isElement(node)) {   // 判断是否为节点  
+        console.log("编译元素" + node.nodeName);  
+      } else if (this.isInterpolation(node)) {  
+        console.log("编译插值⽂本" + node.textContent);  // 判断是否为插值文本 {{}}  
+      }  
+      if (node.childNodes && node.childNodes.length > 0) {  // 判断是否有子元素  
+        this.compile(node);  // 对子元素进行递归遍历  
+      }  
+    });  
+  }  
+  isElement(node) {  
+    return node.nodeType == 1;  
+  }  
+  isInterpolation(node) {  
+    return node.nodeType == 3 && /\{\{(.*)\}\}/.test(node.textContent);  
+  }  
 }  
   
 ```
@@ -145,53 +145,53 @@ class Compile {
  4. 当`name1`更新，`setter`触发时，便可通过对应`Dep`通知其管理所有`Watcher`更新
 
 ```js
-// 负责更新视图  
-class Watcher {  
-  constructor(vm, key, updater) {  
-    this.vm = vm  
-    this.key = key  
-    this.updaterFn = updater  
+// 负责更新视图  
+class Watcher {  
+  constructor(vm, key, updater) {  
+    this.vm = vm  
+    this.key = key  
+    this.updaterFn = updater  
   
-    // 创建实例时，把当前实例指定到Dep.target静态属性上  
-    Dep.target = this  
-    // 读一下key，触发get  
-    vm[key]  
-    // 置空  
-    Dep.target = null  
-  }  
+    // 创建实例时，把当前实例指定到Dep.target静态属性上  
+    Dep.target = this  
+    // 读一下key，触发get  
+    vm[key]  
+    // 置空  
+    Dep.target = null  
+  }  
   
-  // 未来执行dom更新函数，由dep调用的  
-  update() {  
-    this.updaterFn.call(this.vm, this.vm[this.key])  
-  }  
+  // 未来执行dom更新函数，由dep调用的  
+  update() {  
+    this.updaterFn.call(this.vm, this.vm[this.key])  
+  }  
 }  
 ```
 
 声明`Dep`
 
 ```js
-class Dep {  
-  constructor() {  
-    this.deps = [];  // 依赖管理  
-  }  
-  addDep(dep) {  
-    this.deps.push(dep);  
-  }  
-  notify() {   
-    this.deps.forEach((dep) => dep.update());  
-  }  
+class Dep {  
+  constructor() {  
+    this.deps = [];  // 依赖管理  
+  }  
+  addDep(dep) {  
+    this.deps.push(dep);  
+  }  
+  notify() {   
+    this.deps.forEach((dep) => dep.update());  
+  }  
 }  
 ```
 
 创建`watcher`时触发`getter`
 
 ```js
-class Watcher {  
-  constructor(vm, key, updateFn) {  
-    Dep.target = this;  
-    this.vm[this.key];  
-    Dep.target = null;  
-  }  
+class Watcher {  
+  constructor(vm, key, updateFn) {  
+    Dep.target = this;  
+    this.vm[this.key];  
+    Dep.target = null;  
+  }  
 }  
   
 ```
@@ -199,19 +199,19 @@ class Watcher {
 依赖收集，创建`Dep`实例
 
 ```js
-function defineReactive(obj, key, val) {  
-  this.observe(val);  
-  const dep = new Dep();  
-  Object.defineProperty(obj, key, {  
-    get() {  
-      Dep.target && dep.addDep(Dep.target);// Dep.target也就是Watcher实例  
-      return val;  
-    },  
-    set(newVal) {  
-      if (newVal === val) return;  
-      dep.notify(); // 通知dep执行更新方法  
-    },  
-  });  
+function defineReactive(obj, key, val) {  
+  this.observe(val);  
+  const dep = new Dep();  
+  Object.defineProperty(obj, key, {  
+    get() {  
+      Dep.target && dep.addDep(Dep.target);// Dep.target也就是Watcher实例  
+      return val;  
+    },  
+    set(newVal) {  
+      if (newVal === val) return;  
+      dep.notify(); // 通知dep执行更新方法  
+    },  
+  });  
 }  
 ```
 

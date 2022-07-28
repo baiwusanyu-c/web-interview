@@ -53,21 +53,21 @@
 
 ```js
 props:{  
-    // 字符串形式  
- name:String // 接收的类型参数  
-    // 对象形式  
-    age:{    
-        type:Number, // 接收的类型为数值  
-        defaule:18,  // 默认值为18  
-       require:true // age属性必须传递  
-    }  
+    // 字符串形式  
+ name:String // 接收的类型参数  
+    // 对象形式  
+    age:{    
+        type:Number, // 接收的类型为数值  
+        defaule:18,  // 默认值为18  
+       require:true // age属性必须传递  
+    }  
 }  
 ```
 
 `Father.vue`组件
 
 ```js
-<Children name="jack" age=18 />  
+<Children name="jack" age=18 />  
 ```
 
 ### \$emit 触发自定义事件
@@ -79,13 +79,13 @@ props:{
 `Chilfen.vue`
 
 ```js
-this.$emit('add', good)  
+this.$emit('add', good)  
 ```
 
 `Father.vue`
 
 ```js
-<Children @add="cartAdd($event)" />  
+<Children @add="cartAdd($event)" />  
 ```
 
 ### ref
@@ -96,9 +96,9 @@ this.$emit('add', good)
 父组件
 
 ```js
-<Children ref="foo" />  
+<Children ref="foo" />  
   
-this.$refs.foo  // 获取子组件实例，通过子组件实例我们就能拿到对应的数据  
+this.$refs.foo  // 获取子组件实例，通过子组件实例我们就能拿到对应的数据  
 ```
 
 ### EventBus
@@ -111,26 +111,26 @@ this.$refs.foo  // 获取子组件实例，通过子组件实例我们就能�
 `Bus.js`
 
 ```js
-// 创建一个中央时间总线类  
-class Bus {  
-  constructor() {  
-    this.callbacks = {};   // 存放事件的名字  
-  }  
-  $on(name, fn) {  
-    this.callbacks[name] = this.callbacks[name] || [];  
-    this.callbacks[name].push(fn);  
-  }  
-  $emit(name, args) {  
-    if (this.callbacks[name]) {  
-      this.callbacks[name].forEach((cb) => cb(args));  
-    }  
-  }  
+// 创建一个中央时间总线类  
+class Bus {  
+  constructor() {  
+    this.callbacks = {};   // 存放事件的名字  
+  }  
+  $on(name, fn) {  
+    this.callbacks[name] = this.callbacks[name] || [];  
+    this.callbacks[name].push(fn);  
+  }  
+  $emit(name, args) {  
+    if (this.callbacks[name]) {  
+      this.callbacks[name].forEach((cb) => cb(args));  
+    }  
+  }  
 }  
   
-// main.js  
-Vue.prototype.$bus = new Bus() // 将$bus挂载到vue实例的原型上  
-// 另一种方式  
-Vue.prototype.$bus = new Vue() // Vue已经实现了Bus的功能  
+// main.js  
+Vue.prototype.$bus = new Bus() // 将$bus挂载到vue实例的原型上  
+// 另一种方式  
+Vue.prototype.$bus = new Vue() // Vue已经实现了Bus的功能  
 ```
 
 `Children1.vue`
@@ -142,10 +142,10 @@ this.$bus.$emit('foo')
 `Children2.vue`
 
 ```js
-this.$bus.$on('foo', this.handle)  
+this.$bus.$on('foo', this.handle)  
 ```
 
-### $parent 或$ root
+### $parent 或$ root
 
 - 通过共同祖辈`$parent`或者`$root`搭建通信桥连
 
@@ -170,19 +170,19 @@ this.$bus.$on('foo', this.handle)
 // child：并未在props中声明foo  
 <p>{{$attrs.foo}}</p>  
   
-// parent  
-<HelloWorld foo="foo"/>  
+// parent  
+<HelloWorld foo="foo"/>  
 ```
 
 ```js
-// 给Grandson隔代传值，communication/index.vue  
-<Child2 msg="lalala" @some-event="onSomeEvent"></Child2>  
+// 给Grandson隔代传值，communication/index.vue  
+<Child2 msg="lalala" @some-event="onSomeEvent"></Child2>  
   
-// Child2做展开  
-<Grandson v-bind="$attrs" v-on="$listeners"></Grandson>  
+// Child2做展开  
+<Grandson v-bind="$attrs" v-on="$listeners"></Grandson>  
   
-// Grandson使⽤  
-<div @click="$emit('some-event', 'msg from grandson')">  
+// Grandson使⽤  
+<div @click="$emit('some-event', 'msg from grandson')">  
 {{msg}}  
 </div>  
 ```
@@ -196,16 +196,16 @@ this.$bus.$on('foo', this.handle)
 
 ```js
 provide(){  
-    return {  
-        foo:'foo'  
-    }  
+    return {  
+        foo:'foo'  
+    }  
 }  
 ```
 
 后代组件
 
 ```js
-inject:['foo'] // 获取到祖先组件传递过来的值  
+inject:['foo'] // 获取到祖先组件传递过来的值  
 ```
 
 ### `vuex`
@@ -221,7 +221,7 @@ inject:['foo'] // 获取到祖先组件传递过来的值
 
 ### 小结
 
-- 父子关系的组件数据传递选择 `props`  与 `$emit`进行传递，也可选择`ref`
+- 父子关系的组件数据传递选择 `props`  与 `$emit`进行传递，也可选择`ref`
 - 兄弟关系的组件数据传递可选择`$bus`，其次可以选择`$parent`进行传递
 - 祖先与后代组件数据传递可选择`attrs`与`listeners`或者 `Provide`与 `Inject`
 - 复杂关系的组件数据传递可以通过`vuex`存放共享的变量
