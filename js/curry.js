@@ -93,3 +93,16 @@ function curry6(fn,len){
         }
     }
 }
+function curry7(fn,len){
+    let length = fn.length || len
+    let _this = this
+    return function (...arg){
+        let args = [...arg]
+        if(args.length < length){
+            return curry7(fn.bind(_this,...args), length - args.length)
+        }else{
+            fn.call(_this,...args)
+        }
+    }
+
+}

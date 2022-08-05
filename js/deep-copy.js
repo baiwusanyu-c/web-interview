@@ -171,3 +171,19 @@ function deepCopy9 (target,hash = new WeakMap()){
   }
   return copyTarget
 }
+
+function deepCopy10(target,hash= new WeakMap()){
+  if(target === undefined || target === null) return target
+  if(target instanceof Date) return new Date(target)
+  if(target instanceof RegExp) return new RegExp(target)
+  if(typeof target === "function") return target
+  if(hash.get(target)) return hash.get(target)
+  let copyTarget = new target.constructor()
+  hash.set(target,copyTarget)
+  for (const targetKey in target) {
+    if(target.hasOwnProperty(targetKey)){
+      copyTarget[targetKey] = deepCopy10(target[targetKey],hash)
+    }
+  }
+  return copyTarget
+}
