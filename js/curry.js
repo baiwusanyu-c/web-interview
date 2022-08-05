@@ -81,3 +81,15 @@ function curry5(fn,len){
         }
     }
 }
+
+function curry6(fn,len){
+    let length = fn.length || len
+    return function (){
+        let arg = [...arguments]
+        if(arg.length < length){
+            return curry6(fn.bind(this,arg),length - arg.length )
+        }else{
+            return fn.apply(this,arg)
+        }
+    }
+}

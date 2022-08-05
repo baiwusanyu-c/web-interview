@@ -164,3 +164,19 @@ Function.prototype.bind10 = function (target,...arg){
   fn.prototype = orgThis.prototype
   return fn
 }
+
+Function.prototype.bind11 = function (target,...arg){
+  if(typeof target !== "function") {
+    throw Error
+  }
+  let orgThis = this
+  let orgArg = arg
+  function fn(...fnArg){
+    if(this instanceof fn){
+     return new  orgThis(...orgArg,fnArg)
+    }
+    return orgThis.apply(target,...orgArg,fnArg)
+  }
+  fn.prototype = orgThis.prototype
+  return fn
+}

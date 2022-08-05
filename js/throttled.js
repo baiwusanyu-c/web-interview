@@ -87,7 +87,23 @@ function throttled5(fn,delay){
         }
     }
 }
+function throttled6(fn,delay){
+    let timer
+    let startTime = Date.now()
+    return function (...arg){
+        if(timer) clearTimeout(timer)
+        let curTime = Date.now()
+        let _this = this
+        let yuTime = delay - (curTime - startTime)
+        if(yuTime <= 0){
+            fn.apply(_this,[...arg])
+            startTime = Date.now()
+        }else{
+            timer = setTimeout(fn,...arg)
+        }
+    }
 
+}
 /*
 effect(()=>{
     if(a.value){
