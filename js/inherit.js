@@ -173,3 +173,26 @@ function inhert6 (){
   }
   yxljc.prototype = new parent()
 }
+
+
+function inhert7 (){
+  // 寄生组合
+  function parent(){
+    this.nameP = 'parent'
+  }
+  function child(){
+    parent.call(this)
+    this.nameC = 'child'
+  }
+  function Jszh(){
+    child.prototype = Object.create(parent.prototype)
+    child.prototype.constructor = child
+  }
+  // 寄生式
+  function childs(){
+    parent.call(this)
+    this.nameC = 'child'
+  }
+  // 构造函数继承
+  child.prototype = new parent()
+}
