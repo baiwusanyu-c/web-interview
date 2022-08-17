@@ -153,3 +153,24 @@ function debounce7(fn,deley,immedate){
 
     }
 }
+function debounce8(fn,deley,immedate){
+    let timer
+    return function (...arg){
+        let _this = this
+        if(timer) clearTimeout(timer)
+        if(immedate){
+            let callNow = !timer
+            timer = setTimeout(()=>{
+                timer = null
+            },deley)
+            if(callNow){
+                fn.call(_this,...arg)
+            }
+
+        }else{
+            timer = setTimeout(()=>{
+                fn.call(_this,...arg)
+            },deley)
+        }
+    }
+}

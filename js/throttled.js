@@ -102,7 +102,22 @@ function throttled6(fn,delay){
             timer = setTimeout(fn,...arg)
         }
     }
-
+}
+function throttled7(fn,deley){
+    let timer
+    let startTime = Date.now()
+    return function (...arg){
+        let _this = this
+        let curTime = Date.now()
+        let yuTime = deley - (curTime - startTime)
+        if(timer) clearTimeout(timer)
+        if(yuTime <= 0){
+            fn.apply(_this,arg)
+            startTime = Date.now()
+        }else{
+            timer = setTimeout(fn,yuTime)
+        }
+    }
 }
 /*
 effect(()=>{
